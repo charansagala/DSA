@@ -28,5 +28,6 @@ public class Linearsearch{
         } else {
             System.out.println("Element not found");
         }
+        sc.close();
     }
 }
