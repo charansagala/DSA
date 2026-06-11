@@ -1,0 +1,36 @@
+collections is a framework provided by java
+This framework provides many interfaces and their implimented classes in order to store group of objects(Elements) in a single entity
+
+
+CollectionFramework: provides two interfaces
+                         1)Collection interface
+                         2)Map <Interface>
+
+
+            Collection Interface consits of three interfaces
+            1)List <Interface>
+            2)Set <Interface>
+            3)Queue <Interface>
+
+Classes provided by collections framework   
+                    1)ArrayList
+                    2)LinkedList                 
+                    3)Vector                    
+                    4)Stack           
+                    5)ArryaQueue
+                    6)PriorityQueue
+                    7)HashSet
+                    8)LinkedHashSet
+                    9)TreeSet
+
+                    10)collections
+                    11)HashTable
+                    12)HashMap
+                    13)LinkedHashMap
+                    14)TreeMap
+
+
+
+List:
+                
+    
