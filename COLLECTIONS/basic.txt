@@ -31,23 +31,86 @@ Classes provided by collections framework
 
 
 
-List:
                 
     for every object default value is null
-   the default capacity of the Vector is 10 we an specify the capacity of the Vector on time of creation
-   Syntax:= Vector vectorName = new Vector(capacityOfTheVector); 
+    the default capacity of the Vector is 10 we an specify the capacity of the Vector on time of creation
+    Syntax:= Vector vectorName = new Vector(capacityOfTheVector); 
 
-   another of creating the vector or convertnng a array into the Vector
-   Object[] arr = new Object[]{1 ,2 ,3 ,4 ,5};
-   Vector v1 = new Vector(Arrays.asLisr(arr)); //when we use these the capaticty of the vector is equals to the size of the array
-   vector is a Synchroniesed
-   vector is used when the MultiThreading is present in the program and when the data is increased in the exponentially Vector is the best to use.
+    another of creating the vector or convertnng a array into the Vector
+    Object[] arr = new Object[]{1 ,2 ,3 ,4 ,5};
+    Vector v1 = new Vector(Arrays.asLisr(arr)); //when we use these the capaticty of the vector is equals to the size of the array
+    vector is a Synchroniesed
+    vector is used when the MultiThreading is present in the program and when the data is increased in the exponentially Vector is the best to use.
 
 
 vectors is introduce in java1.0 version but collections are introduced in java1.2 version
+intialCapacity :
+defaultCapacity:Capacity when elements are not added into the list.
+
+ArrayList:
+    ArrayList is a resizable array implementation in Java that is part of the java.util package.
+    Unlike arrays, ArrayList can dynamically grow in size as elements are added or removed.
+    
+    Key characteristics of ArrayList:
+    1) Dynamic Size: ArrayList grows automatically when elements are added beyond its current capacity.
+    2) Non-Synchronized: Unlike Vector, ArrayList is not synchronized, making it faster in single-threaded environments.
+    3) Default Capacity: Initial capacity is 10 elements. When capacity is exceeded, it expands by 50% of current size.
+    4) Index-Based: Elements are accessed by index (0-based), providing O(1) access time.
+    5) Generics Support: ArrayList supports generics for type safety (e.g., ArrayList<String>).
+    
+    Syntax to create ArrayList:
+    ArrayList<String> list = new ArrayList<>(); // Generic ArrayList
+    ArrayList list = new ArrayList(); // Non-generic ArrayList
+    
+    Common ArrayList Methods:
+    1) add(E element) - Adds element to the end
+    2) add(int index, E element) - Inserts element at specified index
+    3) get(int index) - Retrieves element at index
+    4) remove(int index) - Removes element at index
+    5) size() - Returns number of elements
+    6) clear() - Removes all elements
+    7) contains(Object o) - Checks if element exists
+    
+    Time Complexity:
+    - Access: O(1)
+    - Insertion: O(n) - requires shifting elements
+    - Deletion: O(n) - requires shifting elements
+    - Search: O(n)
+    
+    When to use ArrayList:
+    - When you need frequent access to elements by index
+    - When working in single-threaded environments
+    - When you need dynamic sizing without synchronization overhead
+    - Most commonly used collection in Java applications
 
 Generics:
      in vectors we can able to add different types of elements example when i created a vector to store only integer values and my friend add a String into the vector when i perform the adding operation of my integer vector i got an Exception.
      to handle these type of Exception java introduced Generics
      To implimente the Generics use "<>" 
-     Vector<Integer> v1 = new Vector<Integer>(); // in Generics we can't mention the primitive data type because inside the vector a Object type of array is created 
+     Vector<Integer> v1 = new Vector<Integer>(); // in Generics we can't mention the primitive data type because inside the vector a Object type of array is created.
+
+
+ArrayList : 
+    defaultCapacity: 0
+    intialCapacity : 10
+
+    ArrayList<Integer> arrayListName = new ArrayLisr<Integer>(Size);
+    when the size is not mentioned tha ArratList will take 10 as default size.
+    when the elements are reached size of 10 and want to add another element the ArrayList increses the size with 50 percent of the original size(mentioned in the creation time).
+    ArratList<Integer> al = new ArrayList<Integer>();
+    al.add(10); // adding element
+    al.add(0,1);//adding the element with specifying the index.
+    al.size() // to know the size of an ArrayList
+    al.capacity()❌// capacity methode is not present in the ArratList
+    al.get(Index); // to retrive the element in the perticular index
+    al.get(10)
+    al.remove(Index) //to delete the element
+    al.removeAll(anotherArrayList)
+    al.clear();
+    al.contains(); to check the element present in the ArrayList or not
+    al.containsAll(anotherArrayList);
+    al.set(indexNumber,value)// to update the value in the specific index
+    al.indedOf(obj);
+    al.lastIndexOf();
+    al.firstIndexOf();
+    al.isEmpty();
