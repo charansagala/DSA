@@ -81,24 +81,41 @@ ArrayList :
 
 
 Stack:
-    Stack is a linear data structure that follows the LIFO principle (Last In, First Out).
-    In Java, Stack is a class in the java.util package that extends the Vector class.
-    Because it extends Vector, Stack is synchronized and supports indexed access, but it is mainly used for LIFO behavior.
+     stack Class extends Vectoe class
+     vector class impliments List interface
+     specialMethodes provided by the stack:
+                            1)push
+                            2)pop
+                            3)peek
+                            4)search
+                            5)empty
+*Stack is a class in java which impliments the list interface and extends the Vectoe class and also represents the LIFO principle.
+Stack is introduced in java1.0
+//pick shows the top of the element in the stack and peek never removes the element form the stack
+//pop removes the top element form the stack.
+*defaultCapacity:10
+*intialCapacity:10
+*it allows duplicate elements and null values.
+*it maintains insertion order.
+*it offers random accessing of elements but as a progammer we couldn't use becauseof FIFO principle.
+*it is synchronized
+*it is used in LiFO cases ex:undo , redo ,recursions.
 
-    Special methods provided by Stack:
-                       1) push
-                       2) pop
-                       3) peek
-                       4) search
-                       5) empty
 
-    Important points about Stack:
-    * Stack was introduced in Java 1.0.
-    * default capacity: 10
-    * initial capacity: 10
-    * It allows duplicate elements and null values.
-    * It maintains insertion order through push/pop operations.
-    * peek() returns the top element without removing it.
-    * pop() removes and returns the top element.
-    * It is synchronized.
-    * It is commonly used in undo/redo operations, recursion, expression evaluation, and backtracking.
+
+LinkedList:
+*LinkedList impliments List interface and Queue interface.
+creating ways of LinkedList:
+                    1)LinkedList<Integer> ll = new LikedList<>();
+                    2)List<Integer> ll = new LinkedList<>();
+                    3)Queue<Integer> ll = new LinkedLisr<>();
+                    -->above statements all are valid because LinkedList impliments both Queue and List interfaces.
+
+LinkedList in pov of List interface:
+remove();//when we didn't mention the index it removes the head node
+remove(indexNumber);//remove the specific index element
+removeAll();
+clear(); // it removes the all elements in the LinkedList
+*intialCapacity:0
+*defaultCapacity:0
+*it allows duplicate and nulls.
