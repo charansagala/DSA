@@ -33,4 +33,21 @@ Classes provided by collections framework
 
 List:
                 
-    
+    for every object default value is null
+   the default capacity of the Vector is 10 we an specify the capacity of the Vector on time of creation
+   Syntax:= Vector vectorName = new Vector(capacityOfTheVector); 
+
+   another of creating the vector or convertnng a array into the Vector
+   Object[] arr = new Object[]{1 ,2 ,3 ,4 ,5};
+   Vector v1 = new Vector(Arrays.asLisr(arr)); //when we use these the capaticty of the vector is equals to the size of the array
+   vector is a Synchroniesed
+   vector is used when the MultiThreading is present in the program and when the data is increased in the exponentially Vector is the best to use.
+
+
+vectors is introduce in java1.0 version but collections are introduced in java1.2 version
+
+Generics:
+     in vectors we can able to add different types of elements example when i created a vector to store only integer values and my friend add a String into the vector when i perform the adding operation of my integer vector i got an Exception.
+     to handle these type of Exception java introduced Generics
+     To implimente the Generics use "<>" 
+     Vector<Integer> v1 = new Vector<Integer>(); // in Generics we can't mention the primitive data type because inside the vector a Object type of array is created 
