@@ -1,0 +1,23 @@
+Map:
+    map is an interface provided by the collections interface.
+    map extends the collection interface.
+    it is used to store keyValue based data.
+
+Why Map:
+    1. Fast Lookup
+        * Retrieve a value using its key quickly.
+        * HashMap provides average O(1) lookup time.
+    2. Unique Keys
+        * Each key can appear only once.
+        * Prevents duplicate identifiers.
+    3. Natural Representation
+        * Many real-world relationships are key-value pairs:
+            * Employee ID → Employee
+            * Username → Password
+            * Country → Capital
+            * Product ID → Product Details
+    4. Convenient Operations
+        * put(key, value) → Insert
+        * get(key) → Retrieve
+        * remove(key) → Delete
+        * containsKey(key) → Check existence
